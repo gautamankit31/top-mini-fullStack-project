@@ -1,12 +1,15 @@
 {
   "name": "url-shortner",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple URL shortener application",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "author": "Your Name",
   "license": "ISC"
 }
