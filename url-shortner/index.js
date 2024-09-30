@@ -12,7 +12,7 @@ async function fetchShortUrl() {
 
     try {
         console.log("Long URL:", longUrl);
-        const res = await fetch('http://localhost:3000/shorturl', {
+        const res = await fetch('https://url-shortner-ecdj.onrender.com/shorturl', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -28,9 +28,9 @@ async function fetchShortUrl() {
 
         // Update the shortened URL display
         shortenedUrlDiv.innerHTML = `<p class="text-lg font-semibold text-gray-700 mb-2">Shortened URL:</p> 
-                                     <a href="http://localhost:3000/${shortenedUrl.shortUrl}" target="_blank" 
+                                     <a href="https://url-shortner-ecdj.onrender.com/${shortenedUrl.shortUrl}" target="_blank" 
                                      class="text-blue-500 hover:underline break-all">
-                                     http://localhost:3000/${shortenedUrl.shortUrl}
+                                     https://url-shortner-ecdj.onrender.com/${shortenedUrl.shortUrl}
                                      </a>`;
     } catch (error) {
         console.error('Error:', error);
